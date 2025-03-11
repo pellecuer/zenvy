@@ -1,0 +1,11 @@
+pentatrion_vite:
+  build_directory: "build"
+  public_directory: "%kernel.project_dir%/public"
+  default_build: "build"
+  throw_on_missing_asset: true
+  throw_on_missing_entry: true
+  cache: false
+  # server:
+  #   https: false
+  #   origin: "http://localhost:5173"
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Zenvy{% endblock %}</title>
+    {# cette ligne liée au bundle pentatrion/vite ci-dessous ne fonctionne pas #}
+     {# {{ vite_entry_script_tags('assets/index-DlQHMVEw.js') }}  #}
+     <script type="module" src="{{ asset('build/assets/index-DlQHMVEw.js') }}"></script>  
+
+</head>
+<body>
+    <div id="app"></div>
+    {% block body %}{% endblock %}
+</body>
+</html>
+
