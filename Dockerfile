@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -y \
     libicu-dev \
     libpq-dev \
     libzip-dev \
-    && docker-php-ext-install intl pdo pdo_mysql zip
+    mysql-common \
+    && docker-php-ext-install intl mysqli pdo pdo_mysql zip    
 
 # Installation de Xdebug et configuration en un seul RUN
 RUN pecl install xdebug \
